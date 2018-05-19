@@ -1,1 +1,1 @@
-All solution to sql is writtten and tested in ORACLE
+All solutions in SQL are writtten and tested in ORACLE.

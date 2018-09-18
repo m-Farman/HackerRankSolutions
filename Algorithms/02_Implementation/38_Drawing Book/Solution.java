@@ -10,7 +10,7 @@ public class Solution {
      * Complete the pageCount function below.
      */
     static int pageCount(int n, int p) {
-        return Math.min(p/2, (n-p)/2) ;
+        return Math.min(p/2, (n % 2 == 0) ? (n - p + 1) / 2 : (n - p) / 2 ) ;
     }
 
     private static final Scanner scanner = new Scanner(System.in);

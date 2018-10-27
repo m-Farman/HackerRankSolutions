@@ -13,7 +13,7 @@ public class Solution {
 int nSize = 1;
         boolean notFound = false;
         while (nSize <= s.length() / 2) {
-            Integer firstNo = Integer.parseInt(s.substring(0, nSize));
+            Long firstNo = Long.parseLong(s.substring(0, nSize));
             int index = nSize, i = 1;
             String st = String.valueOf(firstNo + i++);
             notFound = false;
@@ -27,7 +27,7 @@ int nSize = 1;
 
             }
             nSize++;
-            if (!notFound) {
+            if (!notFound && index == s.length()) {
                 System.out.println("YES " + firstNo);
                 return;
             }
